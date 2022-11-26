@@ -1,3 +1,5 @@
+//First Solution
+
 class Solution {
     public boolean judgeSquareSum(int c) {
         int a = mySqrt(c);
@@ -30,5 +32,23 @@ class Solution {
             }
         }
         return (int)res;
+    }
+}
+
+
+//Second Solution 
+//Optimised Solution
+
+class Solution {
+    public boolean judgeSquareSum(int c) {
+        int i=(int)Math.sqrt(c);
+        int j=0;
+        while(i>=j){
+            int temp = i*i + j*j;
+            if(temp==c){return true;}
+            else if(temp>c || temp<0){i--;}
+            else{j++;}
+        }
+        return false;
     }
 }
