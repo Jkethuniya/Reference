@@ -1,3 +1,5 @@
+
+
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int chk=0;
@@ -22,5 +24,11 @@ class Solution {
             }
         }
         return nums;
+    }
+}
+
+class NewFile{
+    void display(){
+        System.out.println("Hi there");
     }
 }
